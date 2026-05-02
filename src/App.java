@@ -15,6 +15,7 @@ public class App {
                 int result = 0;
                 print("Type in your first number: ");
                 result = scan.nextInt();
+                scan.nextLine();
         while (true){
 			print("Insert a valid selector (+, -, *, /): ");
 			String selector = scan.nextLine();
@@ -26,24 +27,28 @@ public class App {
                     System.out.println("Your current number is: " + result);
                     print("Type in the second value: ");
                     n2 = scan.nextInt();
+                    scan.nextLine();
                     System.out.println("The result is: "  + (result + n2));
                     result += n2;
                 } else if (selector.equals("-")) {
 					System.out.println("Your current number is: " + result);
                     print("Type in the second value: ");
                     n2 = scan.nextInt();
+                    scan.nextLine();
                     System.out.println("The result is: "  + (result - n2));
                     result -= n2;
 				} else if (selector.equals("*")) {
 					System.out.println("Your current number is: " + result);
                     print("Type in the second value: ");
                     n2 = scan.nextInt();
+                    scan.nextLine();
                     System.out.println("The result is: "  + (result * n2));
                     result *= n2;
 				}  else if (selector.equals("/")) {
 					System.out.println("Your current number is: " + result);
                     print("Type in the second value: ");
                     n2 = scan.nextInt();
+                    scan.nextLine();
                     System.out.println("The result is: "  + (result / n2));
                     result /= n2;
 				} else {
